@@ -1,0 +1,48 @@
+---
+const steps = [
+  {
+    n: '01',
+    title: 'Join or start a vault',
+    desc: 'Invite the people you already trust — family, coworkers, your barangay — or join an open vault that matches your budget.',
+  },
+  {
+    n: '02',
+    title: 'Deposit on schedule',
+    desc: 'Set a weekly or monthly contribution. STELLA reminds everyone and records each deposit on-chain, visible to the whole circle.',
+  },
+  {
+    n: '03',
+    title: 'The payout rotates',
+    desc: 'Each cycle, one member receives the full pot — same as a traditional paluwagan, minus the notebook and the guesswork.',
+  },
+  {
+    n: '04',
+    title: 'Cash out anywhere',
+    desc: 'Withdraw to GCash, a bank account, or a padala partner near you, whenever your payout lands.',
+  },
+];
+---
+
+<section id="how-it-works" class="border-y border-white/5 bg-night-900/40 py-28">
+  <div class="container-page">
+    <span class="text-sm font-semibold uppercase tracking-wider text-tala-500">How it works</span>
+    <h2 class="mt-3 max-w-xl font-display text-4xl font-bold text-white sm:text-5xl">
+      Four steps, one cycle.
+    </h2>
+
+    <ol class="mt-16 grid gap-10 md:grid-cols-4">
+      {
+        steps.map((s, i) => (
+          <li class="relative">
+            <span class="font-display text-5xl font-bold text-white/10">{s.n}</span>
+            <h3 class="mt-4 font-display text-lg font-semibold text-white">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist-300">{s.desc}</p>
+            {i < steps.length - 1 && (
+              <span class="absolute right-[-1.25rem] top-6 hidden text-white/15 md:block">→</span>
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
