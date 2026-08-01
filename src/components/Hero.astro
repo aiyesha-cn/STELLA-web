@@ -1,0 +1,34 @@
+---
+import HeroField from './HeroField.tsx';
+---
+
+<section class="relative flex min-h-[92vh] items-center overflow-hidden bg-radial-glow pt-32">
+  <HeroField client:visible />
+
+  <div class="container-page relative z-10">
+    <div class="max-w-3xl">
+      <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-tala-400">
+        Live on Stellar
+      </p>
+
+      <h1 class="font-display text-6xl font-bold leading-[1.03] text-white sm:text-7xl">
+        Paluwagan,<br />
+        <span class="text-ember-500">on-chain.</span>
+      </h1>
+
+      <p class="mt-6 max-w-xl text-lg text-mist-300">
+        STELLA Vault brings the trust of your neighborhood savings circle to your phone —
+        no bank account, no paperwork. Just you, your circle, and money that grows together.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#download" class="btn-primary">Download STELLA Vault</a>
+        <a href="#how-it-works" class="btn-ghost">See how it works</a>
+      </div>
+
+      <p class="mt-5 text-xs text-mist-500">
+        Free to download · Available for iOS and Android
+      </p>
+    </div>
+  </div>
+</section>
